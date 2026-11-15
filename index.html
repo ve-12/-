@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>قصة محارب في عالم المشاعر — فينور</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&amp;family=Aref+Ruqaa:wght@400;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:linear-gradient(160deg,#f6ead6,#ead7b6);--ink:#3a2c1d;--acc:#8a5a2b;--wm:rgba(120,80,30,.10);color-scheme:light dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:linear-gradient(160deg,#241d17,#1a1511);--ink:#eadcc8;--acc:#d9a867;--wm:rgba(217,168,103,.08)}}
+:root[data-theme="dark"]{--bg:linear-gradient(160deg,#241d17,#1a1511);--ink:#eadcc8;--acc:#d9a867;--wm:rgba(217,168,103,.08)}
+body[data-theme=sand]{--bg:linear-gradient(160deg,#f6ead6,#ecdcbf);--ink:#3b2e20;--acc:#8a5a2b;--wm:rgba(138,90,43,.10)}
+body[data-theme=rose]{--bg:linear-gradient(160deg,#ebdfe2,#d8c5ce);--ink:#3a2a33;--acc:#8d4f67;--wm:rgba(141,79,103,.11)}
+body[data-theme=night]{--bg:linear-gradient(160deg,#1c2233,#272e47);--ink:#e8ebf4;--acc:#a9b8e8;--wm:rgba(180,195,255,.08)}
+body[data-theme=ink]{--bg:linear-gradient(160deg,#14262b,#1d343b);--ink:#e4efef;--acc:#85cbc6;--wm:rgba(133,203,198,.08)}
+body[data-theme=sage]{--bg:linear-gradient(160deg,#e5ede0,#d2dfca);--ink:#26352a;--acc:#4f7a58;--wm:rgba(79,122,88,.11)}
+body[data-theme=slate]{--bg:linear-gradient(160deg,#e0e6ed,#cbd5e1);--ink:#232c3a;--acc:#4a6384;--wm:rgba(74,99,132,.11)}
+body[data-theme=italia]{--bg:linear-gradient(160deg,#f5dfcb,#e8c1a3);--ink:#3d2418;--acc:#b0502a;--wm:rgba(176,80,42,.11)}
+body[data-theme=dusk]{--bg:linear-gradient(160deg,#2c2b3b,#37354c);--ink:#ece8f4;--acc:#c4b5ea;--wm:rgba(196,181,234,.08)}
+body[data-theme=sea]{--bg:linear-gradient(160deg,#dcebf1,#c2dbe6);--ink:#1d3340;--acc:#2f7391;--wm:rgba(47,115,145,.11)}
+body[data-theme=gold]{--bg:linear-gradient(160deg,#f8eecf,#f0dca4);--ink:#3a2f12;--acc:#9a7210;--wm:rgba(154,114,16,.12)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100vh;background:var(--bg) fixed;color:var(--ink);font-family:'Amiri','Noto Naskh Arabic',serif;direction:rtl;transition:color .5s}
+.wm{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:0;pointer-events:none;user-select:none;overflow:hidden;
+font-family:'Aref Ruqaa','Amiri',serif;font-weight:700;font-size:min(36vw,52vh);line-height:1;color:var(--wm);white-space:nowrap}
+.page{display:none;position:relative;z-index:1;min-height:100vh}
+.page.on{display:block;animation:f .6s ease}
+@keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.in{max-width:42rem;margin:0 auto;padding:2.4rem 1.3rem 2rem}
+.lab{margin:0;text-align:center;color:var(--acc);font-size:1.1rem;letter-spacing:.04em}
+h2{font-family:'Aref Ruqaa','Amiri',serif;font-size:clamp(2rem,8vw,3rem);text-align:center;margin:.2rem 0;color:var(--acc);line-height:1.5}
+.orn{text-align:center;color:var(--acc);opacity:.7;margin:.2rem 0 1.6rem}
+.prose p{font-size:clamp(1.2rem,4.6vw,1.45rem);line-height:2.15;margin:0 0 1.1rem}
+.prose p.it,.it{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;text-align:left;direction:ltr;font-size:1.35rem}
+.poem{margin:1.6rem auto;padding:1rem 1.2rem;border-inline:2px solid var(--acc);text-align:center;font-size:clamp(1.15rem,4.4vw,1.4rem);line-height:2.1;background:color-mix(in srgb,var(--acc) 7%,transparent);border-radius:6px}
+.poem span{display:block}.poem .pt{font-family:'Aref Ruqaa','Amiri',serif;color:var(--acc);font-size:1.3em;margin-bottom:.5rem}.poem .gap{height:.9rem}
+.cov{text-align:center;padding-top:14vh;min-height:100vh}
+.kicker{color:var(--acc);letter-spacing:.3em;margin:0}
+.cov h1{font-family:'Aref Ruqaa','Amiri',serif;font-size:clamp(2.6rem,11vw,4.6rem);line-height:1.5;margin:.6rem 0;color:var(--acc)}
+.cov .sub{text-align:center;font-size:1.5rem;opacity:.9}
+.by{font-size:1.4rem;margin:1.5rem 0}
+.start{font:inherit;font-size:1.3rem;padding:.6rem 2rem;border:1.5px solid var(--acc);background:transparent;color:var(--acc);border-radius:999px;cursor:pointer}
+.start:hover{background:var(--acc);color:var(--bg)}
+.toc{list-style:none;margin:0;padding:0;font-size:1.3rem;line-height:1.7}
+.toc li{border-bottom:1px solid color-mix(in srgb,var(--acc) 25%,transparent)}
+.toc a{display:block;padding:.55rem .2rem;color:var(--ink);text-decoration:none}
+.toc a:hover{color:var(--acc)}.toc a span{color:var(--acc);font-size:.9em;margin-inline-end:.4rem}
+.sig{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;direction:ltr;margin-top:3rem;padding-top:1rem;border-top:1px solid color-mix(in srgb,var(--acc) 35%,transparent);color:var(--acc)}
+.it-sig{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.25rem;text-align:left}
+.ar-sig{font-family:'Aref Ruqaa','Amiri',serif;font-size:1.35rem;text-align:right}
+.nav{display:flex;justify-content:space-between;gap:.6rem;margin-top:1.4rem}
+.nav button{font:inherit;font-size:1.1rem;flex:1;padding:.55rem .4rem;border:1px solid color-mix(in srgb,var(--acc) 45%,transparent);background:transparent;color:var(--ink);border-radius:10px;cursor:pointer}
+.nav button:hover{background:color-mix(in srgb,var(--acc) 15%,transparent)}
+.nav button[hidden]{visibility:hidden;display:block}
+</style>
+</head>
+<body>
+<div class="wm" aria-hidden="true">فينور</div>
+<section class="page cover" id="p-0"><div class="in cov">
+<p class="kicker">رواية</p><h1>قصة محارب<br>في عالم المشاعر</h1>
+<p class="it sub" lang="it" dir="ltr">Storia di un guerriero nel mondo dei sentimenti</p>
+<p class="by">بقلم: فينور</p><button class="start" data-goto="2">ابدأ القراءة</button>
+<div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-1"><div class="in"><h2>الفهرس</h2><div class="orn">❖</div><ol class="toc"><li><a href="#p-2" data-goto="2"><span></span> مقدمة</a></li><li><a href="#p-3" data-goto="3"><span>الفصل الأول</span> عشر سنوات</a></li><li><a href="#p-4" data-goto="4"><span>الفصل الثاني</span> الضيوف الثقلاء</a></li><li><a href="#p-5" data-goto="5"><span>الفصل الثالث</span> باب الأمل</a></li><li><a href="#p-6" data-goto="6"><span>الفصل الرابع</span> اليوم الأسود</a></li><li><a href="#p-7" data-goto="7"><span>الفصل الخامس</span> أهلًا أيها الحب</a></li><li><a href="#p-8" data-goto="8"><span>الفصل السادس</span> الاختفاء</a></li><li><a href="#p-9" data-goto="9"><span>الفصل السابع</span> رسالة لا تُرسل</a></li><li><a href="#p-10" data-goto="10"><span>الفصل الثامن</span> الرجل الذي استيقظ</a></li><li><a href="#p-11" data-goto="11"><span>الفصل التاسع</span> الحريق</a></li><li><a href="#p-12" data-goto="12"><span>الفصل العاشر</span> بوابة المتاهة</a></li><li><a href="#p-13" data-goto="13"><span>الفصل الحادي عشر</span> أول قناع يسقط</a></li><li><a href="#p-14" data-goto="14"><span>الفصل الثاني عشر</span> ليان وفخ الأسرار</a></li><li><a href="#p-15" data-goto="15"><span>الفصل الثالث عشر</span> ليلة الانتقام</a></li><li><a href="#p-16" data-goto="16"><span>الفصل الرابع عشر</span> الأستاذ هشام</a></li><li><a href="#p-17" data-goto="17"><span>الفصل الخامس عشر</span> أمي</a></li><li><a href="#p-18" data-goto="18"><span>الفصل السادس عشر</span> المواجهة</a></li><li><a href="#p-19" data-goto="19"><span>الفصل السابع عشر</span> ليان تعود</a></li><li><a href="#p-20" data-goto="20"><span>الفصل الثامن عشر</span> رسالة من الماضي</a></li><li><a href="#p-21" data-goto="21"><span>الفصل التاسع عشر</span> العودة إلى الإخوة</a></li><li><a href="#p-22" data-goto="22"><span>الفصل العشرون</span> الاعتزال</a></li><li><a href="#p-23" data-goto="23"><span>الفصل الحادي والعشرون</span> الإخوة الذين حملوني</a></li><li><a href="#p-24" data-goto="24"><span>الفصل الثاني والعشرون</span> ليلة النتيجة</a></li><li><a href="#p-25" data-goto="25"><span>الفصل الثالث والعشرون</span> الشماتة</a></li><li><a href="#p-26" data-goto="26"><span>الفصل الرابع والعشرون</span> الحلم الإيطالي</a></li><li><a href="#p-27" data-goto="27"><span>الفصل الخامس والعشرون</span> الرفض</a></li><li><a href="#p-28" data-goto="28"><span>الفصل السادس والعشرون</span> ما بعد الرفض</a></li><li><a href="#p-29" data-goto="29"><span>الفصل السابع والعشرون</span> التعويض</a></li><li><a href="#p-30" data-goto="30"><span>الفصل الثامن والعشرون</span> الحلم المؤجل</a></li><li><a href="#p-31" data-goto="31"><span>الفصل التاسع والعشرون</span> الكتاب الأول</a></li><li><a href="#p-32" data-goto="32"><span>الفصل الثلاثون</span> الضوء الأول</a></li><li><a href="#p-33" data-goto="33"><span>الفصل الحادي والثلاثون</span> رسالة إلى الطفل</a></li><li><a href="#p-34" data-goto="34"><span>ختام</span> المحارب لا يسقط</a></li></ol><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-2" data-theme="sand"><div class="in"><h2>مقدمة</h2><div class="orn">❖</div><div class="prose"><p>لا أدري من أين أبدأ، ولكن لديّ سؤال يراودني كل حين:</p>
+<p>إذا كنّا أصدقاء... هل ستخونني يومًا؟</p>
+<p>أنا فينور، وسألقي عليكم روايتي المتواضعة، مقتبسة من مجهول.</p>
+<p>أمسك مشروبك المفضل، واقرأ، وتعلّم.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-3" data-theme="sand"><div class="in"><p class="lab">الفصل الأول</p><h2>عشر سنوات</h2><div class="orn">❖</div><div class="prose"><p>بدأ كل شيء بعدما انتهيتُ من المرحلة المتوسطة.</p>
+<p>كنتُ طفلًا بريئًا وقتها. لم أعرف معنى الحب بعد، لكن الذي كنتُ أعرفه جيدًا هو الوفاء بين الأصدقاء.</p>
+<p>كنتُ واحدًا من مجموعة أصدقاء يمثّلون لي إخوتي تمامًا: كرم، وزياد، وعمر، وسليم. عشر سنوات كاملة منذ أيام الروضة. نقتسم الساندويتش في الفسحة، ونكتب أسماءنا على الجدران، ونتشاجر لنتصالح بعد دقيقتين.</p>
+<p>لم ينتابني إحساس بالغدر من ناحيتهم أبدًا.</p>
+<p>كنتُ أظن أن الصداقة مثل الجبل، لا تتحرك. ولم أعلم أن الجبال أيضًا تنهار حين يحفر أحدهم تحتها بصبر.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-4" data-theme="sand"><div class="in"><p class="lab">الفصل الثاني</p><h2>الضيوف الثقلاء</h2><div class="orn">❖</div><div class="prose"><p>ودخل أشخاص جدد في جماعتنا.</p>
+<p>لم يكونوا جددًا بالنسبة لي. كانوا جيراني: مهند ووليد وشلّتهما. ولم أحبهم يومًا، لأنهم كانوا يتنمرون عليّ كثيرًا في الصغر، ويفتعلون المشاكل معي بلا سبب.</p>
+<p>كنتُ أتذكر كل شيء: السخرية من نحافتي، والحقيبة التي رموها في الوحل، والضحكات التي كانت تلاحقني في الطريق إلى البيت.</p>
+<p>وحين دخلوا وسط شلتنا تغيّر كل شيء.</p>
+<p>بدؤوا بالنميمة بيني وبين أصدقائي. كلمة هنا، وهمسة هناك، وجملة تُنقل ناقصة فتصبح طعنة.</p>
+<p>«فينور قال عنك كذا».</p>
+<p>«فينور يسخر منك خلف ظهرك».</p>
+<p>«فينور لا يحبك كما تظن».</p>
+<p>وكنتُ أقف في المنتصف كمن يرى بيته يحترق ولا يملك دلوًا واحدًا من الماء.</p>
+<p>كنتُ حزينًا جدًا. لماذا يفعلون بي هذا؟ ماذا فعلتُ لهم؟</p>
+<p>لم يكن هناك جواب. هناك أناس يكرهونك لأنك لم تؤذهم، لا لأنك آذيتهم.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-5" data-theme="sand"><div class="in"><p class="lab">الفصل الثالث</p><h2>باب الأمل</h2><div class="orn">❖</div><div class="prose"><p>وفي وسط هذه المشاكل والمشاجرات، دقّ على بابي الأمل.</p>
+<p>كان اسمه أسيل.</p>
+<p>صديقة دربي، وحب الطفولة. كنتُ أحبها جدًا منذ كنا صغارًا: منذ كانت تقاسمني الدرس في الصف الثالث، وتصحح لي أخطائي الإملائية وهي تضحك.</p>
+<p>كنا نعود من الدروس الخصوصية سويًا، نتبادل أطراف الحديث على الرصيف. وذات يوم أخذتُ رقمها.</p>
+<p>كان قلبي ينبض بسرعة جنونية، كأنه يريد أن يقفز من صدري ويسبقني إليها. وأخيرًا أخذتُ رقم صديقتي... وحبيبتي.</p>
+<p>كانت كل هذه الأحداث تحدث بالتزامن مع شجارات أصدقائي. كنتُ حزينًا وتعيسًا بفقدان أصدقاء عمري بسبب أشخاص حثالة، وكانت هي الجانب الوحيد المريح في حياتي.</p>
+<p>كنتُ أحدّثها عن مشاكلي دائمًا. أحكي لها ما حدث اليوم مع كرم، وما قاله مهند، وكيف صار زياد يتجنب النظر في عيني.</p>
+<p>كانت تستمع بصبر، وتقول لي جملة واحدة تجعل كل شيء أخفّ:</p>
+<p>«سيمرّ هذا يا فينور».</p>
+<p>كنتُ أشعر أنها أماني ومسكني.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-6" data-theme="sand"><div class="in"><p class="lab">الفصل الرابع</p><h2>اليوم الأسود</h2><div class="orn">❖</div><div class="prose"><p>ودارت العديد من المشاكل بين أصدقائي يوميًا، وكنتُ أحدّثها دائمًا عمّا يحدث.</p>
+<p>حتى جاء اليوم الأسود.</p>
+<p>كنا نتحدث ليلًا كعادتنا. كان الهدوء يلف المدينة، وصوت المراوح وحده يملأ الغرفة. وكان قلبي يتدرب على الجملة منذ أشهر.</p>
+<p>ثم قلتُها.</p>
+<p>فينور: أسيل، أنا أحبك منذ طفولتنا، وأتمنى أن نكمل الدرب سويًا.</p>
+<p>مرّت ثوانٍ طويلة جدًا. كنتُ أسمع نبضي في أذني.</p>
+<p>أسيل: هل أنت مجنون؟ أنت مجرد طفل بالنسبة لي.</p>
+<p>صُعقتُ.</p>
+<p>لم أتوقع هذا الرد أبدًا. حتى أنتِ يا رفيقة دربي؟</p>
+<p>لم أردّ. وضعتُ الهاتف على صدري، ونظرتُ إلى السقف، وشعرتُ أن شيئًا ما انكسر داخلي بلا صوت.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-7" data-theme="rose"><div class="in"><p class="lab">الفصل الخامس</p><h2>أهلًا أيها الحب</h2><div class="orn">❖</div><div class="prose"><p>بدأت تراودني سيناريوهات عن الحب، وكأنني أكلّمه وجهًا لوجه، فكتبتُ:</p>
+<div class="poem"><span>أهلًا أيها الحُبّ،</span><span class="gap"></span><span>لطالما سمعتُ عنك، ورأيتُك في عيون الكثيرين،</span><span>حتّى راودني الفضولُ لخوض تجربتك بنفسي!</span><span>أردتُ أن أعرف كيف يشعر المرءُ حيالَ وجود شخصٍ</span><span>لا يُفارقُ عقلَه وقلبَه،</span><span>وما الذي يختلجُ في صدره حين تقع عيناه عليه...</span><span class="gap"></span><span>ولكنّني اليوم أتساءلُ:</span><span>أكنتَ قد مررت بي يومًا، أم رُبّما زُرتَني ذاتَ حين؟</span><span class="gap"></span><span>نعم، لعلك مررت بي،</span><span>ولكنك لم تكن يومًا حقيقة!</span><span>بل كنتَ دومًا حُلمًا زائفًا،</span><span>رسمته مُخيّلتي بأقلامِ الوهمِ على لوحةٍ من فراغ...</span><span class="gap"></span><span>لستُ أدري أيها الحبّ؛</span><span>أكنتُ أراك لأنّك كنتَ موجودًا،</span><span>أم لأنني أطلتُ النظرَ في الفراغ</span><span>حتّى خُيّل إليّ أنّ فيه أحدًا؟</span><span class="gap"></span><span>أتعلم؟</span><span>لعلّني لم أكن أبحث عنك،</span><span>بل عن الشعور الذي طالما تخيّلتُ أنك قد تمنحني إيّاه:</span><span>شعورَ الأمان، والحنان، والسّلام،</span><span>وكلّ ما هو جميل...</span><span class="gap"></span><span>ولكنّني الآن، وإن أنكرتُ وجودك،</span><span>لا أزال أبحثُ عن ذلك الشعور الذي يمرّ بي بين الحين والآخر؛</span><span>حتّى وإن لم يكن مصدرُه أنت.</span></div></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-8" data-theme="rose"><div class="in"><p class="lab">الفصل السادس</p><h2>الاختفاء</h2><div class="orn">❖</div><div class="prose"><p>وفي ليلة وضحاها... توقّف كل شيء.</p>
+<p>اختفت من حياتي، هي وأصدقائي معًا.</p>
+<p>لم يُجب أحدٌ على رسائلي. حُظرتُ هنا، وتجاهلني هناك، وحتى كرم الذي كنتُ أحسبه آخر ما يتبقى، صار يمرّ بجانبي في الشارع كأنني جزء من الرصيف.</p>
+<p>كنتُ كل ليلة أبكي مثل الطفل الذي فقد أمه. كنتُ حسّاس المشاعر، ولم أعرف يومًا كيف أُخفي ما في داخلي.</p>
+<p>كنتُ أفكر في أسيل دائمًا. لم تغب عن عقلي ولا عن أحلامي يومًا.</p>
+<p>وكل ليلة كنتُ أستيقظ في السادسة صباحًا مفزوعًا، أبحث عنها في كل مكان. ربما تحنّ إليّ مرة ثانية. ربما كان هناك خطأ ما. كيف لي أن أحلم بها وأفكر بها دائمًا وهي اختفت من حياتي هكذا؟</p>
+<p>كنتُ أفتح الهاتف في كل مرة، وأنظر إلى آخر رسالة منها، وأقرأ كلمة «طفل» ألف مرة، كأن الكلمة ستتغير في المرة الألف.</p>
+<p>لم تتغير.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-9" data-theme="rose"><div class="in"><p class="lab">الفصل السابع</p><h2>رسالة لا تُرسل</h2><div class="orn">❖</div><div class="prose"><p>لكنني في الحقيقة لم أكن بلا عذر. كانت الكلمات تتراكم داخلي حتى كتبتُ لها رسالة لم أرسلها قط:</p>
+<div class="poem"><span>لن تجدي مثلي.</span><span>ليس لأنني كنتُ كاملًا،</span><span>بل لأنني أحببتُكِ بصدقٍ</span><span>لم أُبقِ منه شيئًا لنفسي.</span><span class="gap"></span><span>سيأتي يومٌ تفتّشين فيه عني بين الوجوه،</span><span>وتبحثين عن ذلك القلب</span><span>الذي كان يغفر كثيرًا،</span><span>ويتحمّل أكثر مما يجب،</span><span>لكنكِ لن تجديني.</span><span class="gap"></span><span>سأكون قد رحلتُ منذ زمنٍ بعيد،</span><span>لا بجسدي فقط،</span><span>بل بكل ما كان يربطني بكِ.</span><span class="gap"></span><span>وعندما تدركين قيمة ما أضعتِ،</span><span>لن يؤلمكِ غيابي بقدر ما سيؤلمكِ</span><span>أنكِ أدركتِ متأخرةً</span><span>أن الوصول إليّ</span><span>أصبح مجرد ذكرى مستحيلة.</span></div>
+<p>كتبتُها وأنا أظن أنني أخرج بها من الحزن. لكنني لم أخرج. كل ما فعلته أنني أضفتُ إلى الحزن شيئًا من الكبرياء الجريح.</p>
+<p>والكبرياء الجريح، يا أصدقائي، أخطر من الحزن.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-10" data-theme="night"><div class="in"><p class="lab">الفصل الثامن</p><h2>الرجل الذي استيقظ</h2><div class="orn">❖</div><div class="prose"><p>ومن ثَمّ قست عليّ الدنيا بكل ما فيها.</p>
+<p>ولم تكتفِ بذلك، فحتى أهلي لم يسلموا من الضغوط التي أثقلتني. كان أبي يسألني عن درجاتي بنبرة اتهام، وكانت عمّتي تقارنني بأولاد الجيران، وكل جملة كانت تقلّل من ذاتي أكثر.</p>
+<p>كنتُ قريبًا من الجنون.</p>
+<p>حتى جاء يوم نمتُ فيه واستيقظتُ في اليوم الثاني شخصًا آخر.</p>
+<p>تلاشت الضحكات من وجهي. صرتُ كئيبًا ومنطفئًا تمامًا. ومستواي الدراسي انخفض كثيرًا، وصار المعلمون ينظرون إليّ بحيرة: أين ذهب الولد المتفوق؟</p>
+<p>يتغيّر الإنسان إلى الأبد بعد ليلة يظنّ فيها أن قلبه سيتوقف من شدة الحزن.</p>
+<p>وكنتُ أرى الجميع يضحك، وأنا الذي يتملّكني الاكتئاب في صميم قلبي.</p>
+<p>أتذكر أنني وقفتُ يومًا في حفل المدرسة أنظر إلى زملائي وهم يلتقطون الصور، وفكرتُ: كيف يضحكون هكذا؟ هل لا يشعرون بما أشعر؟ أم أنني أنا الغريب الوحيد في هذا العالم؟</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-11" data-theme="night"><div class="in"><p class="lab">الفصل التاسع</p><h2>الحريق</h2><div class="orn">❖</div><div class="prose"><p>لم أغَر يومًا من أحد.</p>
+<p>لم أحسد من هو أعلى مني دراسيًا، ولا أجمل مني، ولا حتى أعلى مني طبقيًا.</p>
+<p>لكن شيئًا ما اشتعل بداخلي. نيران شديدة تتوغل بين قلبي، وكأنها ستفجّر قفصي الصدري.</p>
+<div class="poem"><span>حَرِيقًا بَيْنَ أَضْلُعِي، فَمِنْ أَيْنَ نَارِي؟</span><span>أَمِنْ أَحْلَامِي، أَمْ مِنْ كُلِّ أُمْنِيَاتِي؟</span><span>أَمْ مِنْ عَزِيزٍ بَيْنَ أَضْلُعِي وَفُؤَادِي؟</span><span>اِنْخَمِدِي يَا نَارِي، فَمَا أَنَا بِمُنَادِي</span></div>
+<p>تولّدت غيرتي.</p>
+<p>لماذا كل الناس من حولي تضحك، وأنا مثل الجمرة أحترق؟ وإذا كنتُ أنا هكذا، فلماذا لا يكون الجميع مثلي؟</p>
+<p>تولّدت الأفكار بين شيطاني وعقلي، واتفقا على أمر واحد: أن أؤذي من حولي، أو من يدخل دائرتي، ثأرًا لهذه الأيام التي ضاعت مني، ولزهرة شبابي التي ذبلت قبل أوانها.</p>
+<p>كان صوت الشيطان في رأسي ناعمًا، يقول: «أنتَ تستحق».</p>
+<p>وكان صوت العقل خافتًا، يقول: «لا تفعل».</p>
+<p>وانتصر الأعلى صوتًا.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-12" data-theme="ink"><div class="in"><p class="lab">الفصل العاشر</p><h2>بوابة المتاهة</h2><div class="orn">❖</div><div class="prose"><p>ودخلتُ عالم النشر.</p>
+<p>كانت البداية بقعًا سوداء مشتتة في كل جانب. تمالكتُ أعصابي وبدأتُ الرحلة، ورأيتُ جميع أنواع التوكسيك التي لم ترها عيني من قبل. كنتُ في مذبحة المشاعر.</p>
+<p>وتعلّمتُ في بدايتها أن ليس كل من يعاملك بلطف يتمنى لك الخير. قد يكون وسيلة من الوسائل القذرة التي تسلب منك روحك ببطء.</p>
+<p>كان أول ما استقبلني مجتمع إلكتروني صغير اسمه «حبر أسود»، يجتمع فيه الكتّاب الشباب لتبادل النصوص والتشجيع. يقوده شاب في الخامسة والعشرين يُدعى مازن، صوته هادئ وعباراته منمّقة، ويقول دائمًا:</p>
+<p>«نحن عائلة هنا».</p>
+<p>كلمة «عائلة» وحدها كانت كافية لتفتح في قلبي بابًا ظننتُ أنني أغلقته بالضبّة والمفتاح.</p>
+<p>في الأسبوع الأول قرأ الجميع نصوصي وصفّقوا لي. كتب رامي تحت أحدها: «هذا الفتى سيصبح كبيرًا، احفظوا اسمه». وأرسلت لي ليان رسالة خاصة: «كلماتك تشبه جراحي، كأنك تكتبني».</p>
+<p>ظننتُ أن الحياة تعوّضني أخيرًا عن كل ما أخذته مني.</p>
+<p>لكنني نسيتُ القاعدة الأولى التي تعلمتها في طفولتي: من يصفّق لك بحرارة زائدة، يقيس حجم الجيب الذي ستسقط منه.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-13" data-theme="ink"><div class="in"><p class="lab">الفصل الحادي عشر</p><h2>أول قناع يسقط</h2><div class="orn">❖</div><div class="prose"><p>بعد ثلاثة أسابيع كتبتُ أجمل نص في حياتي: نصًّا عن طفلٍ يقف على شاطئ ينتظر سفينة لن تعود.</p>
+<p>كان في النص كل ما لم أقله لأسيل، وكل ما لم أقله لكرم، وكل الليالي التي بكيتُ فيها حتى الفجر.</p>
+<p>سهرتُ عليه حتى الصباح، ثم أرسلته إلى رامي وحده قبل النشر ليقرأه ويبدي رأيه.</p>
+<p>ردّ بعد دقيقتين: «مذهل. لا تغيّر حرفًا واحدًا».</p>
+<p>وفي اليوم التالي رأيتُ النص منشورًا على صفحة كبيرة يتابعها آلاف القرّاء، وتحته اسم رامي.</p>
+<p>لم أصرخ.</p>
+<p>وقفتُ أمام الشاشة كمن يرى جثته في المرآة. تحركت أصابعي وحدها وكتبتُ له: «ما هذا؟»</p>
+<p>جاءني الردّ ضاحكًا:</p>
+<p>«يا فينور، لا تبالغ. أنت مجرد مبتدئ، وأنا أمنحك شرف أن أُلهَم منك. اعتبرها هدية».</p>
+<p>ثم حظرني.</p>
+<p>دخلتُ مجموعة «حبر أسود» أبحث عن عدل، فوجدتُ مازن يكتب: «لا نريد مشاكل شخصية هنا. رامي عضو مؤسس وأنت جديد. تعلّم الهدوء».</p>
+<p>وحين هممتُ بالرد، وجدتُ أن ليان قد وضعت علامة إعجاب على رسالة مازن.</p>
+<p>حينها فهمتُ أن العائلة التي وُعدتُ بها كانت مجرد فخ بدفء مصطنع. شعرتُ بذلك الشعور القديم مرة أخرى: شعور أن أصدقائي الذين أحببتهم قد خانوني من جديد.</p>
+<p>جلستُ تلك الليلة وكتبتُ:</p>
+<div class="poem"><span class="pt">قصيدة: الذين صافحوني</span><span class="gap"></span><span>صافَحوني بأيدٍ دافئاتٍ</span><span>وفي الكُمِّ خنجرٌ مَصقولُ</span><span>ضحكوا في وجهي كأنّي أخوهم</span><span>وعلى ظهري انتهى المَقيلُ</span><span>قالوا: «أهلًا بكَ بيننا»</span><span>وفي النَّفسِ عَقدٌ ثقيلُ</span><span>يا ربِّ كم من قِناعٍ</span><span>يُشبِهُ الوجهَ، والوجهُ ذَليلُ</span></div></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-14" data-theme="ink"><div class="in"><p class="lab">الفصل الثاني عشر</p><h2>ليان وفخ الأسرار</h2><div class="orn">❖</div><div class="prose"><p>تخيّلتُ أنني سأبتعد عنهم جميعًا، لكن ليان لم تتركني.</p>
+<p>كانت تكتب لي كل ليلة: «هل أنت بخير؟ اشتقتُ إلى حديثك».</p>
+<p>كان في صوتها حنان يشبه حنان أمي حين كنتُ صغيرًا، حنان يجعلك تفتح كل أبوابك دفعة واحدة. وكنتُ جائعًا لهذا الحنان إلى درجة أنني لم أسأل نفسي: لماذا تهتم بي هذه الفتاة بهذا القدر؟</p>
+<p>وفي ليلة ضعيفة حكيتُ لها كل شيء. عن أسيل، وعن اعترافي الأحمق، وعن ليالي البكاء، وعن الخوف الذي يمزقني، وعن الاستيقاظ في السادسة فزعًا. كتبتُ لها كل ما لم أقله لأحد.</p>
+<p>ردّت: «أنت لست ضعيفًا يا فينور. أنت إنسان. وسرّك في أمان معي».</p>
+<p>صدّقتُها.</p>
+<p>وبعد أسبوعين، نشر مازن في المجموعة صورًا من محادثتي معها، مقتطعة بعناية، وتحتها تعليق ساخر: «مجنون الحب الذي لم يُشفَ من طفولته».</p>
+<p>ثم انهالت التعليقات: ضحكات، وإيموجي، وجمل من نوع «يا عيني على الطفل الرقيق».</p>
+<p>أما ليان، فكتبت تحت المنشور ببرود:</p>
+<p>«كنتُ أرى أنه أكبر من هذا الدلع».</p>
+<p>أغلقتُ الهاتف ونظرتُ إلى السقف.</p>
+<p>شعرتُ أن الكلمة القديمة عادت تطاردني. «طفل». كأن العالم كله اتفق على أن يناديني بها.</p>
+<p>وعاد ذلك الشعور: النار تتوغل بين ضلوعي، والصوت الشرير يهمس لي بأن الوقت قد حان.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-15" data-theme="ink"><div class="in"><p class="lab">الفصل الثالث عشر</p><h2>ليلة الانتقام</h2><div class="orn">❖</div><div class="prose"><p>فتحتُ مفكرتي وبدأتُ أكتب.</p>
+<p>لم يكن نصًّا أدبيًا، كان خطة.</p>
+<p>كنتُ أعرف أسرار رامي: فقد سرق نصوصًا من ثلاثة كتّاب آخرين. وأعرف أن مازن يبيع الإعلانات في صفحته ويخبر الأعضاء أنها «تبرعات». وأعرف أن ليان تنسخ عبارات من كتب قديمة وتنسبها لنفسها.</p>
+<p>كان بين يديّ سلاح يكفي لتدميرهم جميعًا في ليلة واحدة.</p>
+<p>كتبتُ المنشور بلغة حادّة كالشفرة، وجهّزتُ الصور، وراجعتُ كل كلمة. لم يتبقَّ إلا الضغط على زر «نشر».</p>
+<p>وضعتُ إصبعي فوق الزر. كان قلبي يخفق كطبل حرب.</p>
+<p>ثم رنّ هاتفي.</p>
+<p>كان المتصل كرم.</p>
+<p>كرم، صديقي من أيام الروضة، الذي ابتعد عني في ضجيج تلك الأيام. ترددتُ طويلًا، ثم أجبتُ بصوت بارد:</p>
+<p>«ماذا تريد؟»</p>
+<p>لم يرد فورًا. سمعتُ صوت أنفاسه، ثم قال بهدوء:</p>
+<p>«سمعتُ أنك تغيّرت يا فينور. وسمعتُ عن المجموعة وعن الصور. لا أتصل لأعظك، ولا أطلب منك أن تعود كما كنت. فقط لا تصبح مثلهم».</p>
+<p>قلتُ بغضب: «هم الذين بدؤوا!»</p>
+<p>قال: «أعرف. وأنت الذي ستقرر أين ينتهي الأمر».</p>
+<p>أغلق الخط.</p>
+<p>وبقيتُ أنظر إلى زر النشر، وإلى كلمات الكراهية التي كتبتُها بيدي. وللمرة الأولى منذ سنوات رأيتُ نفسي كما هي: فتى جريحًا يحمل سيفًا أكبر منه، ويوشك أن يؤذي نفسه به.</p>
+<p>لم أضغط الزر.</p>
+<p>ضغطتُ على «حذف».</p>
+<p>وبكيتُ، لكنه كان بكاءً مختلفًا. بكاء من يُخرج السمّ من جسده.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-16" data-theme="sage"><div class="in"><p class="lab">الفصل الرابع عشر</p><h2>الأستاذ هشام</h2><div class="orn">❖</div><div class="prose"><p>في الأسبوع التالي ذهبتُ إلى معرض للكتب في مدينتي، لا لشيء إلا لأهرب من الشاشة.</p>
+<p>تجولتُ بين الأجنحة حتى وقفتُ أمام رجل عجوز يجلس خلف طاولة صغيرة، أمامه نسخ قليلة من كتاب غلافه باهت.</p>
+<p>كان اسمه الأستاذ هشام: كاتب منسي منذ ثلاثين سنة، لكن عينيه كانتا تلمعان بذلك النور الذي يملكه من لم يبع روحه.</p>
+<p>سألني: «تكتب؟»</p>
+<p>قلتُ مندهشًا: «كيف عرفت؟»</p>
+<p>ابتسم: «الذين يكتبون يحملون في أعينهم أسئلة لا تنتهي. ما الذي يؤلمك يا بني؟»</p>
+<p>لا أعلم لماذا حكيتُ له كل شيء. حكيتُ عن رامي وليان ومازن، وعن الخطة التي كتبتُها ثم حذفتُها. استمع بصبر دون أن يقاطعني، ولم ينظر إلى ساعته مرة واحدة.</p>
+<p>ثم قال:</p>
+<p>«سأخبرك سرًّا تعلّمتُه بعد ثلاثين سنة. الكلمة سلاح، نعم. لكن من يستعملها للانتقام يصبح عبدًا لمن آذاه. تظل مقيّدًا به كل ليلة، تفكر فيه أكثر مما يفكر هو فيك. أما من يستعملها ليبني شيئًا، فهو الذي ينتصر في النهاية، حتى لو تأخر الانتصار».</p>
+<p>سألتُه: «وهل أترك حقي هكذا؟ هل أصمت؟»</p>
+<p>ضحك بصوت خافت: «لم أقل لك اصمت. قلتُ لك لا تتحول إلى ما تحارب. حقّك تأخذه بالدليل والهدوء، لا بالحقد والصراخ».</p>
+<p>ثم أعطاني نسخة من كتابه، وكتب في أول صفحة:</p>
+<p>«إلى فينور: لا تدع الليل الذي مرّ بك يصبح هو اسمك».</p>
+<p>عدتُ إلى البيت وقرأتُ الكتاب كله في ليلة واحدة. لم يكن أجمل كتاب قرأتُه، لكنه كان أصدق كتاب.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-17" data-theme="sage"><div class="in"><p class="lab">الفصل الخامس عشر</p><h2>أمي</h2><div class="orn">❖</div><div class="prose"><p>في تلك الأيام لاحظتُ شيئًا لم ألاحظه منذ سنوات: أمي.</p>
+<p>كانت تقف عند باب غرفتي كل مساء، تحمل كوب الشاي، وتنظر إليّ بعينين تحاولان ألا تسألا.</p>
+<p>كنتُ أعرف أنها تعرف. الأمهات يعرفن دائمًا، حتى لو لم نخبرهن.</p>
+<p>وفي مساء بارد، وضعتُ القلم وقلتُ لها:</p>
+<p>«أمي، تعالَي اجلسي».</p>
+<p>جلست على حافة السرير، وأمسكتُ يدها، وقلتُ لها كل شيء لأول مرة. لم أحكِ عن النشر ولا عن رامي. حكيتُ عن الطفل الذي كان يبكي كل ليلة وهي لا تدري.</p>
+<p>لم تقل شيئًا. وضعتْ يدها على رأسي، وبقيتْ تمسح شعري بصمت.</p>
+<p>ثم قالت بصوت مبحوح:</p>
+<p>«كنتُ أسمعك يا ولدي. كنتُ أقف عند الباب كل ليلة وأسمعك، ولم أعرف كيف أدخل».</p>
+<p>بكينا معًا.</p>
+<p>لم تحلّ دموعنا المشكلة، لكنها فتحت نافذة صغيرة في جدار طويل. ومنذ ذلك اليوم صار الشاي على مكتبي كل مساء، وصارت حكاياتي تُروى لها قبل أن تُروى للشاشة.</p>
+<p>وأدركتُ أنني كنتُ أبحث في الغرباء عن حنان يسكن في بيتي منذ الأزل.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-18" data-theme="sage"><div class="in"><p class="lab">الفصل السادس عشر</p><h2>المواجهة</h2><div class="orn">❖</div><div class="prose"><p>بعد شهرين أُقيمت أمسية أدبية كبيرة في المدينة، وعلمتُ أن رامي سيُكرَّم فيها كـ«كاتب الموسم الواعد». كان سيقرأ نصّه الشهير، النص الذي سرقه مني.</p>
+<p>لم أذهب بغضب.</p>
+<p>ذهبتُ ومعي مفكرتي القديمة التي دوّنتُ فيها المسودة الأولى بخط يدي وبتاريخها، ومعي لقطات الرسالة التي أرسلتُ فيها النص إلى رامي قبل نشره بيوم، وردّه عليّ: «لا تغيّر حرفًا واحدًا».</p>
+<p>جلستُ في الصف الأخير.</p>
+<p>صعد رامي إلى المنصة بابتسامته المعتادة، وبدأ يقرأ نصي كلمة كلمة، بصوت متهدج مصطنع. كنتُ أعرف كل نبرة منه، لأنني كتبتُها وأنا أبكي حقًّا.</p>
+<p>وحين انتهى وصفّق الجمع، وقفتُ ورفعتُ يدي بهدوء.</p>
+<p>«اعذروني. أودّ أن أسأل الأستاذ رامي سؤالًا بسيطًا: في أي تاريخ كتبتَ هذا النص؟»</p>
+<p>تجمّد وجهه للحظة. ثم قال بتعالٍ: «ومن تكون أنت؟»</p>
+<p>مشيتُ بخطى ثابتة نحو المنصة، ووضعتُ المفكرة أمام منظّم الأمسية. قلتُ فقط:</p>
+<p>«أنا من كتبه. وهذه مسودتي بخط يدي، وهذه رسالتي إليه، وهذا ردّه».</p>
+<p>لم أصرخ، ولم أشتم، ولم أذكر أي شيء من أسراره الأخرى. اكتفيتُ بالحقيقة وحدها.</p>
+<p>ساد صمت ثقيل، ثم بدأ الهمس يتصاعد. رأيتُ وجه رامي يتحول من الأحمر إلى الأصفر، ثم يصبح كورقة جافة. حاول أن يتكلم فلم يجد ما يقوله.</p>
+<p>انتهت الأمسية بإلغاء تكريمه، وبعد أيام اختفى من عالم النشر كله.</p>
+<p>لكنني حين غادرتُ القاعة لم أشعر بنشوة الانتصار التي توقعتُها. شعرتُ بشيء أهدأ بكثير: راحة.</p>
+<p>وكتبتُ تلك الليلة:</p>
+<div class="poem"><span class="pt">قصيدة: العدل الهادئ</span><span class="gap"></span><span>لم أحمِلِ الغَضَبَ سَيفًا</span><span>بل حمَلتُ الحقَّ دَليلا</span><span>فسَقَطَ القِناعُ وحدَهُ</span><span>وما احتجتُ صَوتًا طَويلا</span><span>مَن عاشَ بالزَّيفِ دَهرًا</span><span>يَهوي ولو كانَ جَليلا</span><span>وأنا الذي كنتُ ظَنّي</span><span>أنَّ الثَّأرَ يُطفئُ غَليلا</span></div></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-19" data-theme="sage"><div class="in"><p class="lab">الفصل السابع عشر</p><h2>ليان تعود</h2><div class="orn">❖</div><div class="prose"><p>لم أتوقع أن أرى ليان مرة أخرى.</p>
+<p>لكنها ظهرت بعد شهر، تقف عند باب المقهى الذي أجلس فيه عادة، مرتبكة، بعينين محمرتين، بلا ذلك الحنان المصطنع.</p>
+<p>قالت: «لقد أُغلقت مجموعة حبر أسود. انكشف مازن، وتركني الجميع. وأنا... لا أعرف أين أذهب».</p>
+<p>نظرتُ إليها طويلًا. كنتُ أتخيل هذا المشهد منذ شهور، وأُعدّ فيه عبارات قاسية، وجملًا تجرحها كما جرحتني.</p>
+<p>لكنني حين رأيتها أمامي لم أرَ المرأة التي خانتني. رأيتُ فتاة خائفة، تعلّمت أن تحمي نفسها بأسوأ الطرق.</p>
+<p>قلتُ لها: «ما فعلتِه بي لا يُنسى، ولن أتظاهر بأنه لم يحدث».</p>
+<p>أطرقت: «أعرف».</p>
+<p>«لكنني لن أكرهكِ. الكره ثقيل جدًا، وأنا تعبتُ من حمله. أسامحكِ، لا لأنكِ تستحقين، بل لأنني أستحق أن أتخفف».</p>
+<p>بكت، ولم أمدّ يدي لأواسيها. ليس قسوةً، بل لأن الغفران لا يعني العودة.</p>
+<p>يمكنك أن تفتح باب قلبك لتخرج الكراهية، دون أن تُدخل منه الخيانة من جديد.</p>
+<p>قمتُ، ودفعتُ حساب قهوتها، ومضيت.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-20" data-theme="sage"><div class="in"><p class="lab">الفصل الثامن عشر</p><h2>رسالة من الماضي</h2><div class="orn">❖</div><div class="prose"><p>في ليلة شتوية، وبعد أشهر من الهدوء، وصلتني رسالة على هاتفي من رقم قديم أعرفه جيدًا، رقم حفظتُه أكثر مما حفظتُ رقم بيتنا.</p>
+<p>«فينور، أنا أسيل. أعرف أنك قد لا تريد قراءة هذا. لقد كنتُ جبانة يومها، لم أعرف كيف أتعامل مع مشاعرك، وكنتُ أنا نفسي أمرّ بظروف لم أحكها لأحد. اختفيتُ لأنني لم أعرف كيف أواجهك. أردتُ فقط أن أقول: أنا آسفة».</p>
+<p>قرأتُ الرسالة مرة، ثم مرتين، ثم أغلقتُ الشاشة وجلستُ أنظر إلى الظلام.</p>
+<p>كنتُ أحلم بهذه الرسالة لسنوات، وأظن أن قلبي سيرقص حين تصلني.</p>
+<p>لكنني اكتشفتُ شيئًا غريبًا: لم أعد أنتظرها.</p>
+<p>كتبتُ لها ردًّا قصيرًا:</p>
+<p>«شكرًا لأنكِ كتبتِ. أسامحكِ، وأتمنى لكِ كل خير. لكنني لم أعد ذلك الطفل الذي تعرفينه، وأحب الرجل الذي أصبحتُ عليه».</p>
+<p>وأرسلتُها، ثم وضعتُ الهاتف جانبًا، وللمرة الأولى نمتُ حتى الصباح دون أن أستيقظ فزعًا في السادسة.</p>
+<div class="poem"><span class="pt">قصيدة: إلى التي رحلت</span><span class="gap"></span><span>يا ربّةَ الأمسِ الذي ما عادَ لي</span><span>لا تَحزَني، فالجُرحُ بتُّ أُداويهِ</span><span>كنتِ الحكايةَ، وانتهت أوراقُها</span><span>وأنا الكتابُ، وسطرٌ جديدٌ يَليهِ</span><span>لا الحُبُّ كانَ وَهمًا، ولا الفراقُ عُقوبةً</span><span>بل كانَ دَرسًا في الذي يُنجيهِ</span><span>فاذهَبي بسَلامٍ، فالقلبُ تعلَّمَ</span><span>أنَّ الوداعَ طريقُ مَن يَبنيهِ</span></div></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-21" data-theme="sage"><div class="in"><p class="lab">الفصل التاسع عشر</p><h2>العودة إلى الإخوة</h2><div class="orn">❖</div><div class="prose"><p>بعد أسابيع من تلك الرسالة، قابلتُ زياد في الطريق.</p>
+<p>زياد، أحد إخوتي القدامى. كان يقف عند محل الحلويات الذي كنا نقصده ونحن صغار، ينظر إلى الواجهة كأنه يبحث عن شيء ضاع.</p>
+<p>رآني، فتجمّد. وأنا تجمّدتُ.</p>
+<p>مرّت ثوانٍ طويلة كأنها سنوات، ثم قال بصوت خفيض:</p>
+<p>«فينور... أنا آسف».</p>
+<p>لم أعرف ماذا أقول. كنتُ قد أعددتُ لهذه اللحظة ألف جملة، لكنها تبخّرت كلها.</p>
+<p>قال: «كنا أغبياء. صدّقنا كلام مهند ووليد، ولم نسألك. لم نسأل أحدًا. وحين تراجعنا كان الوقت قد فات».</p>
+<p>قلتُ: «لماذا لم تتصلوا؟»</p>
+<p>قال وهو ينظر إلى الأرض: «لأننا كنا نخجل. والخجل أحيانًا أقوى من الحب».</p>
+<p>ضحكتُ، ضحكة حقيقية قصيرة فاجأتني. ثم قلتُ:</p>
+<p>«تعال، سنأكل حلوى كما كنا نفعل».</p>
+<p>جلسنا ساعتين نتحدث. حكى لي كيف تفرقت الشلة، وكيف ابتعد مهند ووليد في النهاية بعدما فقدوا المتعة في التفريق، وكيف أن كرم كان الوحيد الذي ظل يسأل عني من بعيد.</p>
+<p>لم تعد الصداقة القديمة كما كانت. لكنها عادت إلى حجمها الحقيقي: إخوة جرحتهم الأيام، ويعرفون الآن أن الجرح ممكن أن يلتئم.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-22" data-theme="slate"><div class="in"><p class="lab">الفصل العشرون</p><h2>الاعتزال</h2><div class="orn">❖</div><div class="prose"><p>حين دخلتُ الصف الثالث الثانوي، قررتُ أن أفعل ما لم أفعله في حياتي: أن أغلق كل الأبواب دفعة واحدة.</p>
+<p>اعتزلتُ ذلك العالم كله. حذفتُ حسابات النشر، وخرجتُ من كل المجموعات، وتركتُ الشاشة التي كانت تأكل لياليّ وتنفخ في ناري.</p>
+<p>أعطيتُ هاتفي لأمي وقلتُ لها: «احتفظي به حتى العاشرة مساءً».</p>
+<p>علّقتُ على جدار غرفتي جدولًا مرتبًا بالألوان: الفيزياء بالأزرق، والكيمياء بالأخضر، والأحياء بالبرتقالي، والإنجليزية بالأحمر. وكتبتُ فوقه بخط كبير:</p>
+<p>«لا شعر، لا نصوص، لا انتقام. مذاكرة فقط».</p>
+<p>كان الصمت في الغرفة غريبًا في الأيام الأولى. كنتُ معتادًا على ضجيج الغضب في رأسي، فلما هدأ، سمعتُ أشياء لم أسمعها منذ سنوات: صوت عقارب الساعة، وصوت أمي في المطبخ، وصوت قلبي حين لا يكون في معركة.</p>
+<p>كانت أمي تستيقظ معي في الفجر. تضع الشاي على المكتب دون كلمة، وتجلس في الركن تطوي الغسيل وكأنها لا تراقبني، وهي في الحقيقة لا تراقب شيئًا سواي.</p>
+<p>وكنتُ أقول لنفسي كل صباح:</p>
+<p>«هذه فرصتك الأخيرة لتثبت أن الفتى الذي سقط ليس هو الفتى الذي سينتهي».</p>
+<p>كنتُ أظن أن الاجتهاد يكفي. وأن من يبذل كل ما عنده، يأخذ ما يستحق.</p>
+<p>ولم أكن أعرف أن الحياة أحيانًا لا تُحاسب بالمجهود وحده.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-23" data-theme="slate"><div class="in"><p class="lab">الفصل الحادي والعشرون</p><h2>الإخوة الذين حملوني</h2><div class="orn">❖</div><div class="prose"><p>لم أكن وحدي في تلك السنة، وهذا ما أحمد الله عليه إلى اليوم.</p>
+<p>بعد أن عدنا إلى بعضنا، تحوّل إخوتي القدامى إلى جيش صغير من حولي.</p>
+<p>كان كرم يأتي إليّ كل مساء بدفتره الأخضر الممزق الأطراف، ويجلس على الأرض بجانب مكتبي، ويقول: «أخرج الكيمياء، سنبدأ من حيث توقفت».</p>
+<p>وكان زياد عبقري الفيزياء بيننا. يشرح لي القانون كأنه يحكي نكتة، فأفهمه وأضحك في الوقت نفسه. وكان عمر يخترع جملًا مضحكة ليحفّظني أسماء المركبات، بعضها لا يُقال أمام أمي. أما سليم فكان وزير التموين: يحضر الساندويتشات والعصير، ويقول بجدية تامة: «العقل السليم في الجسم السليم، فكلوا».</p>
+<p>سهرنا ليالي كثيرة في غرفتي. نتبادل الأوراق، ونتحدث عن مستقبلنا، ونتشاجر على الإجابات ثم نتصالح بعد دقيقتين كما كنا صغارًا.</p>
+<p>وفي إحدى الليالي، وبينما كنا متعبين جدًا ونحدّق في سقف الغرفة، قال كرم فجأة:</p>
+<p>«أتعلم يا فينور؟ كنتُ أخاف أنك لن تسامحنا أبدًا».</p>
+<p>قلتُ: «وأنا كنتُ أخاف ألا تعودوا أبدًا».</p>
+<p>ضحك سليم: «حسنًا، ها نحن قد عدنا، فاستمر في المذاكرة».</p>
+<p>ضحكنا جميعًا. وفي تلك اللحظة فهمتُ شيئًا جديدًا: الصداقة الحقيقية لا تظهر في الاحتفالات، بل تظهر في الليالي الطويلة التي يجلس فيها أحدهم بجانبك فقط ليخفف عنك ثقل الورق.</p>
+<p>لقد حملوني. بحق، حملوني.</p>
+<p>وبقدر ما أحمل لهم من حب، بقدر ما كنتُ أخشى أن أخذلهم.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-24" data-theme="slate"><div class="in"><p class="lab">الفصل الثاني والعشرون</p><h2>ليلة النتيجة</h2><div class="orn">❖</div><div class="prose"><p>جاء يوم النتيجة كما يأتي القدر: بلا مقدمات.</p>
+<p>استيقظتُ في ذلك الصباح وقلبي يدق دقات متقطعة. كانت أمي قد صلّت الفجر وجلست تدعو بصوت خافت. وكان أبي قد خرج إلى عمله مبكرًا، قال وهو يرتدي حذاءه: «أخبرني بالنتيجة حين تعرفها».</p>
+<p>جلستُ أمام الحاسوب مع كرم وزياد على الهاتف. كتبتُ رقم الجلوس بأصابع باردة.</p>
+<p>ثم ظهرت النتيجة.</p>
+<p>نظرتُ إلى الرقم طويلًا. ثم أعدتُ قراءته. ثم قرأته مرة ثالثة كما كنتُ أقرأ كلمة «طفل» قديمًا، على أمل أن يتغير.</p>
+<p>لم يتغير.</p>
+<p>لقد حصلتُ على نتيجة لا بأس بها لمن يراها من الخارج، لكنها لم تكن ما حلمتُ به، ولا ما سهرتُ من أجله، ولا ما كنتُ أحتاجه لأفتح الباب الذي أريده.</p>
+<p>لم أتوفق.</p>
+<p>سمعتُ صوت كرم من الهاتف: «فينور؟ ماذا حدث؟»</p>
+<p>لم أستطع الرد.</p>
+<p>دخلت أمي الغرفة، نظرتْ إلى الشاشة، ثم إلى وجهي، ولم تسأل. جلست بجانبي ووضعت يدها على كتفي.</p>
+<p>قلتُ بصوت مخنوق: «كنتُ أبذل كل ما أستطيع يا أمي».</p>
+<p>قالت: «أعرف. أنا شاهدتُ كل ليلة».</p>
+<p>«لكنني لم أنجح».</p>
+<p>«هذه نتيجة امتحان يا ولدي، وليست حكمًا على روحك. هناك فرق كبير بين الاثنين».</p>
+<p>بكيتُ. ليس بكاء الغضب ولا الانتقام، بل بكاء من تعب كثيرًا في سباق، ثم اكتشف أن خط النهاية ليس حيث ظنّ.</p>
+<p>وفي المساء، جاء الإخوة الأربعة إلى بيتنا، ولم يتكلم أحد عن النتيجة. جلسوا فقط حولي، وأكلنا الحلوى التي أحضرها سليم، وشاهدنا مباراة قديمة، وكأن الدنيا لم تنتهِ.</p>
+<p>وأدركتُ أن القدر الذي يكسرك أحيانًا يرسل معه من يجمع الشظايا.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-25" data-theme="slate"><div class="in"><p class="lab">الفصل الثالث والعشرون</p><h2>الشماتة</h2><div class="orn">❖</div><div class="prose"><p>لكن ليس كل الناس يجمعون الشظايا. بعضهم يعدّها.</p>
+<p>بعد أسبوع من النتيجة، كان هناك غداء الجمعة المعتاد في بيت العائلة، حيث يجتمع أهل أبي: الجد، والأعمام، والعمّات، والأولاد.</p>
+<p>دخلتُ مع أمي وأبي، وأحسستُ بالعيون تتحول إليّ كلها، كأنني دخلتُ قاعة محكمة.</p>
+<p>كان عمي الحاج سمير يتصدر المائدة، يمضغ الطعام ببطء ويراقبني بابتسامة جانبية. وجلست عمتي ناهد بجوار ابنها نادر، الذي حصل على نتيجة عالية جدًا، وكانت تتحدث عنه منذ بداية الجلسة كأنه اخترع الكهرباء.</p>
+<p>ثم قال عمي سمير بصوت عالٍ ليسمع الجميع:</p>
+<p>«وأنت يا فينور، ماذا ستفعل الآن؟ كنتَ تكتب الأشعار بدل أن تذاكر، أليس كذلك؟»</p>
+<p>انفجر بعضهم ضاحكًا.</p>
+<p>قالت عمتي ناهد: «قلنا لكم من البداية. الولد ذهنه مشغول بأشياء ثانية».</p>
+<p>وقال أحد أبناء عمي: «شاعر الأسرة، المهم أن تكتب لنا قصيدة عن النتيجة».</p>
+<p>ضحكات. وملاعق تدق في الأطباق. وصوت داخلي يقول لي: لا تنفجر.</p>
+<p>نظرتُ إلى أبي. كان يمضغ طعامه بصمت. لم يقل كلمة تدافع عني. بل ابتسم ابتسامة محرجة وهو يهز رأسه كأنه يقول: «ماذا نفعل؟ هكذا هو».</p>
+<p>كانت تلك النظرة هي التي كسرتني، أكثر من كل كلمات العائلة.</p>
+<p>استأذنتُ بهدوء وخرجتُ إلى الشرفة. كان الهواء باردًا، والشارع تحتي مليئًا بأطفال يلعبون الكرة. وقفتُ أنظر إليهم وأتذكر نفسي حين كنتُ في مثل أعمارهم، في بلد آخر، تحت سماء أخرى، كان يخاطبني فيها الناس باسمي، لا بلقب «الشاعر الفاشل».</p>
+<p>سمعتُ عمي سمير يقول من الداخل، ظنًّا منه أنني لن أسمع:</p>
+<p>«هذا الولد لن ينفع في شيء».</p>
+<p>لم أبكِ.</p>
+<p>وضعتُ يدي على سور الشرفة، وقلتُ لنفسي بهدوء غريب:</p>
+<p>«سنرى».</p>
+<p>لم يكن تحديًا حاقدًا، كان وعدًا صغيرًا بيني وبين نفسي. وعدًا بأن أبني حياتي بعيدًا عن عيونهم، وأن أثبت لنفسي أولًا، قبل أن أثبت لأي أحد.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-26" data-theme="italia"><div class="in"><p class="lab">الفصل الرابع والعشرون</p><h2>الحلم الإيطالي</h2><div class="orn">❖</div><div class="prose"><p>كان لي حلم لم أخبر به أحدًا إلا أمي وإخوتي الأربعة.</p>
+<p>أن أكمل تعليمي في إيطاليا.</p>
+<p>لم يكن حلمًا عابرًا. كانت إيطاليا هي العالم الذي تربيتُ فيه، والأرض التي أشعر فيها بالأمان، وكأنها الوطن الذي لم أولد فيه لكنني وُلدتُ من جديد فيه.</p>
+<p>أتذكر رائحة الخبز الطازج في الصباح الباكر، تنبعث من المخبز عند ناصية الشارع. وأتذكر صوت الترام الأصفر وهو يعبر خلف نافذة غرفتي، وساحة المدينة المرصوفة بالحجارة القديمة، وحمام الساحة الذي لا يخاف من الأطفال.</p>
+<p>أتذكر جارتنا السيدة مارتا، العجوز التي كانت تناديني من شرفتها بلكنة محببة، وتنزل لي سلة صغيرة بالبسكويت. وأتذكر أصدقائي في المدرسة الذين كانوا ينطقون اسمي بطريقة مضحكة، ويشاركونني الساندويتشات دون أن يسألوا من أين أتيت أو من يكون أبي.</p>
+<p>كنتُ أمشي ليلًا في شوارع المدينة دون خوف. كان المعلمون يشجعونني على الأسئلة، لا يعاقبونني عليها. وكانت المكتبة العامة بابًا مفتوحًا للجميع، لا يسألني حارسها: «ابن من أنت؟»</p>
+<p>وهناك، في الصف الرابع، رأيتُ صبيًا في مدرستي يلعب كرة القدم بيد صناعية. كانت يدًا معدنية دقيقة تتحرك بأزرار صغيرة. وقفتُ مذهولًا أراقبه، ثم سألتُ المعلمة: «من صنع هذه اليد؟»</p>
+<p>ابتسمتْ وقالت: «مهندسون يا فينور. مهندسون في المجال الطبي».</p>
+<p>منذ ذلك اليوم عرفتُ ما أريد أن أصبح.</p>
+<p>كنتُ أريد أن أصنع أشياء تُعيد للناس ما فقدوه. أن أجمع الطب والهندسة في يد واحدة، وأخلق من الأسلاك والمعادن أملًا جديدًا.</p>
+<p>وحين رجعنا إلى بلدنا، شعرتُ أنني أُقتلعتُ من تربتي. لم أكن أفهم لهجات الناس بسهولة، ولا قسوة نظراتهم، ولا لماذا كل شيء هنا يُقاس بالمال والنسب.</p>
+<p>كنتُ أحافظ على إيطالياتي في سري. أقرأ الكتب بلغتها، وأشاهد محاضراتها على الإنترنت، وأحتفظ بخريطة صغيرة للمدينة التي كبرتُ فيها فوق مكتبي.</p>
+<p>وحين اقتربتُ من نهاية الثانوية، قلتُ لنفسي:</p>
+<p>«الآن حان الوقت. سأعود إلى هناك. سأدرس الهندسة الطبية في إحدى جامعاتها العريقة. وسأعود إلى بيتي الأول».</p>
+<p>كتبتُ الخطة بدقة: الأوراق المطلوبة، وشهادات اللغة، وأسماء الجامعات، وتكاليف الدراسة والسكن، وحتى المنح المحتملة.</p>
+<p>وذهبتُ إلى أبي وفي يدي حلم كامل.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-27" data-theme="dusk"><div class="in"><p class="lab">الفصل الخامس والعشرون</p><h2>الرفض</h2><div class="orn">❖</div><div class="prose"><p>جلستُ أمام أبي في غرفة الجلوس بعد العشاء. وضعتُ الملف على الطاولة بيننا، وقلتُ بصوت أحاول أن أجعله ثابتًا:</p>
+<p>«أبي، أريد أن أحدثك في أمر مهم».</p>
+<p>رفع عينيه عن التلفاز وقال: «تكلم».</p>
+<p>شرحتُ له كل شيء. حكيتُ عن الهندسة الطبية، وعن الجامعات، وعن الخطة، وعن إمكانية الحصول على منحة جزئية، وعن أنني أستطيع العمل هناك بجانب الدراسة. حكيتُ عن اليد الصناعية وعن الحلم القديم.</p>
+<p>استمع حتى النهاية. ثم أخذ الهاتف وفتح الآلة الحاسبة.</p>
+<p>بدأ يضرب أرقامًا. كنتُ أراقب أصابعه وهي تتحرك على الشاشة، وكل رقم يسقط في قلبي كحجر.</p>
+<p>قال أخيرًا: «ومن سيصرف عليك؟»</p>
+<p>قلتُ: «سأعمل وأتدبر أمري. والمنحة...»</p>
+<p>قاطعني: «الغربة تكلّف. تكاليف لا تنتهي. وأنا لن أحمل مسؤولية أحد هناك».</p>
+<p>قلتُ بذهول: «لكنني ابنك».</p>
+<p>«وهل ستأكل شهادتك؟ ادرس هنا، واعمل هنا، وكوّن نفسك هنا. أنا لا أضيّع فلوسي على أحلام».</p>
+<p>حاولتُ مرة أخرى بصوت أخفض: «لكن هذا ما أريده يا أبي. هذه حياتي».</p>
+<p>نظر إليّ ببرود وقال جملة لا أنساها:</p>
+<p>«قراري نهائي. انتهى النقاش».</p>
+<p>حاولت أمي أن تتدخل: «يا أبو فينور، الولد...»</p>
+<p>قال: «لا تتدخلي».</p>
+<p>وعاد إلى التلفاز.</p>
+<p>كان هذا كل شيء. رفض قاطع، بلا تفكير، بلا اعتذار، بلا حتى نظرة تقول: «أنا آسف لأنني لا أستطيع».</p>
+<p>وقفتُ هناك بملفي بين يديّ، وأحسستُ أن كل الليالي التي سهرتُها، وكل الأحلام التي رسمتُها، وكل الإيطالية التي حفظتُها، سقطت في بئر ليس له قاع.</p>
+<p>وأدركتُ أنني بالنسبة له لستُ حلمًا ولا مشروعًا ولا ابنًا يُراهَن عليه.</p>
+<p>كنتُ بندًا في ميزانية.</p>
+<p>وكنتُ بالنسبة له لا شيء، لأن أهم شيء عنده هو المال.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-28" data-theme="dusk"><div class="in"><p class="lab">الفصل السادس والعشرون</p><h2>ما بعد الرفض</h2><div class="orn">❖</div><div class="prose"><p>جلستُ تلك الليلة على سريري وحدي أنظر إلى الجدار.</p>
+<p>الخريطة الصغيرة للمدينة الإيطالية كانت معلقة فوق مكتبي. نظرتُ إليها طويلًا، ثم مددتُ يدي لأنزعها، لكنني لم أستطع.</p>
+<p>سمعتُ طرقًا خفيفًا على الباب. دخلت أمي، وجلست بجانبي دون أن تتكلم، ثم قالت بصوت منخفض:</p>
+<p>«حاولتُ معه يا ولدي. ولم يسمع».</p>
+<p>قلتُ: «أعرف».</p>
+<p>«لا تكرهه».</p>
+<p>قلتُ: «لا أكرهه، لكنني... لا أفهمه. كيف يضع المال فوق كل شيء؟ كيف يرى حلمي رقمًا في آلة حاسبة؟»</p>
+<p>صمتت قليلًا ثم قالت: «ربما هو خائف يا فينور. بعض الآباء لا يعرفون كيف يعبرون عن حبهم إلا بالحذر، وبعضهم لا يعرف حتى أنه يخطئ».</p>
+<p>لم أرد. لم أكن مستعدًا لأن أبحث عن أعذار له تلك الليلة.</p>
+<p>حين خرجت أمي، بقيتُ أفكر. كان الغضب القديم يطرق بابي: ذلك الصوت الذي يقول «هو لا يحبك. هم جميعًا ضدك. انتقم».</p>
+<p>لكنني هذه المرة عرفتُ الصوت. لقد قابلتُه من قبل، في ليلة انتقامي من رامي وليان ومازن. وكنتُ قد تعلمتُ من الأستاذ هشام ومن كرم كيف أرد عليه.</p>
+<p>قلتُ لنفسي بهدوء:</p>
+<p>«لن أجعل أبي سببًا لأتحول إلى ما حاربتُه. سأحزن، نعم. سأبكي إن احتجتُ. لكنني لن أحمل الكراهية».</p>
+<p>نزعتُ الخريطة بحذر، وطويتُها، ووضعتُها في ملف مع شهادات اللغة والخطط والأوراق. ثم كتبتُ على غلاف الملف بخط واضح:</p>
+<p>«مؤجَّل».</p>
+<p>ولم أكتب «ملغى».</p>
+<p>لأن الحلم الذي يُؤجَّل يظل حيًّا، أما الذي يُلغى فيموت.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-29" data-theme="sage"><div class="in"><p class="lab">الفصل السابع والعشرون</p><h2>التعويض</h2><div class="orn">❖</div><div class="prose"><p>وبعد كل هذا الألم، جاء التعويض كما يأتي الفرج بعد العسر.</p>
+<p>عوّضني الله بما لم أتوقع.</p>
+<p>جاء قبولي في كلية التمريض. لم يكن هذا ما حلمتُ به، ولم أكن أراه حينها إلا بابًا ضيقًا بعد بابٍ واسع أُغلق. لكنني دخلتُه.</p>
+<p>حين عرفت أمي، بكت من الفرح وقبّلت جبيني مئة مرة. وحين عرف أبي، قال: «جيد، تتخرج بسرعة وتشتغل وتصرف على نفسك».</p>
+<p>لم يقل «أنا فخور بك». قال «تصرف على نفسك».</p>
+<p>ابتسمتُ، ولم أرد. لقد تعلمتُ أن بعض الناس لا يملكون في جعبتهم إلا لغة واحدة، ولن تجد فيها ما تريد مهما انتظرت.</p>
+<p>في أول يوم تدريب، ارتديتُ الزي الأبيض ووقفتُ أمام المرآة. لم أرَ فتى مهزومًا، رأيتُ شابًا يبدأ فصلًا جديدًا.</p>
+<p>وفي القسم، كان هناك مريض مسنّ اسمه الحاج عبد الله، يرقد في سريره بصمت وعينيه تحدقان في السقف. لم يكن يكلم أحدًا، ولم يزره أحد.</p>
+<p>اقتربتُ منه ذات صباح وقلتُ: «صباح الخير يا حاج. هل تحتاج شيئًا؟»</p>
+<p>لم يرد. ثم أمسكتُ يده برفق لأقيس نبضه، فشدّ على أصابعي فجأة، وقال بصوت مرتجف:</p>
+<p>«أنا خائف يا بني».</p>
+<p>جلستُ بجانبه. لم أقل له «لا تخف»، فقد كنتُ أعرف أن هذه الجملة لا تفيد من يرتجف. قلتُ فقط:</p>
+<p>«وأنا هنا. لن أتركك».</p>
+<p>بقي ممسكًا بيدي حتى نام.</p>
+<p>وفي طريق العودة، وأنا أمشي في ممرات المستشفى، فهمتُ سرًّا لم أكن أراه. لقد علّمني الألم كيف أجلس مع الألم. وكيف أسمع الخائف دون أن أنكر خوفه، وكيف أمسك يدًا مرتجفة دون أن أحكم عليها.</p>
+<p>كل تلك الليالي التي بكيتُ فيها وحدي لم تذهب هباءً. لقد كانت تدريبًا طويلًا على الرحمة.</p>
+<p>وعرفتُ أن الله لم يغلق بابًا ليحرمني، بل ليفتح لي بابًا آخر لم أكن أراه.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-30" data-theme="sea"><div class="in"><p class="lab">الفصل الثامن والعشرون</p><h2>الحلم المؤجل</h2><div class="orn">❖</div><div class="prose"><p>لكن الحلم القديم لم يمت.</p>
+<p>كان ينام في صدري كطائر صغير، يستيقظ أحيانًا في ليالي الصيف ويرفرف بجناحيه.</p>
+<p>كنتُ أعود من المستشفى متعبًا، وأفتح الحاسوب، وأتابع محاضرات الهندسة الطبية بالإيطالية على الإنترنت. أرى الطلاب يتناقشون في دوائر القلب الصناعي والأطراف الذكية، وأهمس لنفسي: «هذا مكاني. أنا فقط تأخرتُ قليلًا».</p>
+<p>صرتُ أجمع بين عالمين: التمريض الذي يعلّمني الإنسان من الداخل، والهندسة التي تحلم بإصلاحه من الخارج. فكرتُ يومًا: ربما هذا بالضبط ما يحتاجه المجال الطبي، شخص يعرف السرير والجهاز معًا. ممرّض يفكر كمهندس، ومهندس يشعر كممرّض.</p>
+<p>وضعتُ خطة جديدة. بعد التخرج سأعمل وأدّخر، ثم أتقدم لماجستير الهندسة الطبية في إيطاليا. ربما بمنحة، وربما بعملي بجانب الدراسة. ليس باعتماد على أحد، بل بيدي.</p>
+<p>لن أطلب من أبي شيئًا. وسأثبت أنني لستُ عبئًا على أحد.</p>
+<p>وفي ليلة هادئة، جلستُ أمام ورقة وكتبتُ:</p>
+<div class="poem"><span class="pt">قصيدة: وطنٌ في البعيد</span><span class="gap"></span><span>لي في البعيدِ بلادٌ، قلبُها أمانُ</span><span>فيها كَبِرتُ، وفيها لي حُلمٌ وإيمانُ</span><span>مضيتُ عنها صغيرًا، والعينُ تَذرِفُ ما لا يَقولُه اللِّسانُ</span><span>وبعضُ الحُدودِ تُغلَقُ، لكنَّ القلبَ لا يُغلِقُه سُلطانُ</span><span>سأرجعُ يومًا بعلمي لا بدمعي، يا زمانُ</span><span>فلا الفَقرُ يُثنيني، ولا الرَّفضُ، ولا الحِرمانُ</span><span>وإن أخَّروا حُلمي، فالحُلمُ باقٍ ما بقيَ الإنسانُ</span></div>
+<p>طويتُ القصيدة ووضعتُها داخل الملف المكتوب عليه «مؤجَّل».</p>
+<p>وأعرف الآن أن «مؤجَّل» ليست كلمة حزينة. هي كلمة فيها وعد.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-31" data-theme="gold"><div class="in"><p class="lab">الفصل التاسع والعشرون</p><h2>الكتاب الأول</h2><div class="orn">❖</div><div class="prose"><p>في تلك الشهور بدأتُ أكتب بطريقة مختلفة.</p>
+<p>لم أعد أكتب لأرد على أحد، ولا لأثبت شيئًا لأحد. صرتُ أكتب كما يتنفس الإنسان بعد أن كان تحت الماء.</p>
+<p>جمعتُ نصوصي القديمة والجديدة، وبدأتُ أرتبها في كتاب. كان العنوان الذي اخترتُه: «محارب في عالم المشاعر».</p>
+<p>سهرتُ عليه شهورًا. حذفتُ النصوص التي كُتبت بحقد، وأبقيتُ التي كُتبت بصدق، حتى لو كانت أبسط وأقل لمعانًا.</p>
+<p>وحين أنهيتُ الصفحة الأخيرة، جلستُ أنظر إلى الكتاب على الشاشة، وفكرتُ: من أريد أن أهديه؟</p>
+<p>كتبتُ على صفحة الإهداء:</p>
+<p>«إلى أمي، التي كانت تقف عند الباب.</p>
+<p>وإلى كرم، الذي اتصل في اللحظة الأخيرة.</p>
+<p>وإلى الأستاذ هشام، الذي علّمني أن الكلمة بناء.</p>
+<p>وإلى الطفل الذي كنتُه، لأنه لم يستسلم».</p>
+<p>وأرسلتُ نسخة منه إلى الأستاذ هشام.</p>
+<p>بعد أسبوع جاءني رده بخط يده في رسالة ورقية قديمة الطراز:</p>
+<p>«قرأتُ كتابك مرتين. في الأولى بكيتُ، وفي الثانية ابتسمتُ. وهذا هو الفرق بين كتابة الجرح وكتابة التعافي. أنا فخور بك يا بني».</p>
+<p>احتفظتُ بتلك الرسالة في الدرج الذي أضع فيه أغلى ما أملك.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-32" data-theme="gold"><div class="in"><p class="lab">الفصل الثلاثون</p><h2>الضوء الأول</h2><div class="orn">❖</div><div class="prose"><p>مضت الأشهر الأولى في كلية التمريض بطيئة ومؤلمة، وكنتُ أحمل في حقيبتي حلمًا مؤجلًا.</p>
+<p>اكتشفتُ أن الشفاء لا يأتي في ليلة واحدة كما يأتي الانكسار. كان يأتي على جرعات صغيرة: قراءة كتاب كامل بعد أشهر من العجز، حلّ مسألة صعبة، ضحكة صادقة في مجلس عائلي.</p>
+<p>ثم جاء ذلك اليوم الذي ضحكتُ فيه من قلبي، فتوقفتُ مذهولًا: هل ما زلتُ أعرف كيف أفعل هذا؟</p>
+<p>في الكلية التقيتُ بسديم، زميلة جديدة تجلس بجانبي في قاعة المحاضرات. كانت تقرأ بصمت وتبتسم قليلًا.</p>
+<p>وفي أحد الأيام، وبينما كنتُ أحدّق في دفتري بوجه شارد، سألتني بصوت خفيض:</p>
+<p>«هل أنت بخير؟»</p>
+<p>كنتُ أعرف هذه الجملة، وأعرف ما يختبئ خلفها أحيانًا. لكنني لم أكذب كعادتي، ولم أقل «أنا بخير». نظرتُ إليها وقلتُ:</p>
+<p>«لستُ بخير تمامًا، لكنني في الطريق».</p>
+<p>ابتسمتْ، وقالت:</p>
+<p>«هذا يكفي».</p>
+<p>لم يكن في كلامها وعود كبيرة، ولا حنان مفرط، ولا مديح يخنق. كانت مجرد كلمات صادقة وبسيطة، من إنسانة لا تريد منه شيئًا.</p>
+<p>وأدركتُ حينها أن الدفء الحقيقي لا يحتاج إلى استعراض.</p>
+<p>صرنا نتبادل الكتب بدل الرسائل الطويلة. تعيرني روايةً وتأخذ مني ديوانًا. وحين نتحدث، لا يحاول أحدنا أن يبدو أكبر مما هو.</p>
+<p>سألتني ذات مرة: «لماذا تكتب؟»</p>
+<p>قلتُ: «كنتُ أكتب لأنني أحترق. والآن أكتب لأنني أريد أن أُنير».</p>
+<p>نظرتْ إليّ طويلًا، ثم قالت: «هذه أجمل إجابة سمعتُها».</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-33" data-theme="gold"><div class="in"><p class="lab">الفصل الحادي والثلاثون</p><h2>رسالة إلى الطفل</h2><div class="orn">❖</div><div class="prose"><p>في ليلة هادئة، جلستُ أمام ورقة بيضاء وكتبتُ رسالة إلى نفسي، إلى ذلك الفتى الذي وقف على الرصيف وأخذ رقم أسيل، وقلبه يخفق كطبل.</p>
+<p>كتبتُ:</p>
+<div class="poem"><span>عزيزي فينور الصغير،</span><span class="gap"></span><span>أعرف أنك الآن تبكي، وأن الليل يبدو بلا نهاية،</span><span>وأن كلمة «طفل» تدور في رأسك كالسكين.</span><span class="gap"></span><span>أريدك أن تعرف شيئًا:</span><span>ستبكي أكثر. وستخسر أكثر.</span><span>وستسمع كلمات تجرحك،</span><span>وتقابل وجوهًا تبتسم وتطعن.</span><span class="gap"></span><span>لكنك لن تضيع.</span><span class="gap"></span><span>سيتصل بك كرم في الوقت المناسب،</span><span>وستقابل رجلًا عجوزًا يعلّمك أن الكلمة بناء،</span><span>وستجلس أمك على حافة سريرك وتمسح شعرك،</span><span>وستضحك يومًا من قلبك وتندهش.</span><span class="gap"></span><span>وسيُغلَق في وجهك بابٌ كنتَ تحلم به،</span><span>فلا تظنّ أنه آخر الأبواب،</span><span>ولا أنه حكمٌ على قيمتك.</span><span class="gap"></span><span>لا تحمل الكراهية يا صغيري،</span><span>فهي أثقل من أن تُحمل.</span><span class="gap"></span><span>ولا تحزن على من رحل،</span><span>فالذين يرحلون في الوقت الخطأ</span><span>يفسحون المكان لمن سيبقى في الوقت الصحيح.</span><span class="gap"></span><span>وأخيرًا:</span><span>ما قاله لك أسيل عن أنك «مجرد طفل»</span><span>لم يكن حقيقة عنك،</span><span>بل كان خوفًا منها.</span><span class="gap"></span><span>أحبك،</span><span>فينور الذي كبر.</span></div>
+<p>طويتُ الورقة ووضعتُها في كتاب الأستاذ هشام، عند الصفحة التي كتب لي فيها إهداءه.</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<section class="page" id="p-34" data-theme="gold"><div class="in"><p class="lab">ختام</p><h2>المحارب لا يسقط</h2><div class="orn">❖</div><div class="prose"><p>يا من تقرؤون قصتي...</p>
+<p>ربما تكونون الآن في إحدى تلك الليالي التي مررتُ بها. ليلة خيانة صديق، أو رفض حبيب، أو نتيجة لم تأتِ كما حلمتم، أو أب أغلق في وجهكم بابًا كنتم تظنونه سيُفتح.</p>
+<p>أريد أن أقول لكم أشياء تعلمتُها بثمن غالٍ.</p>
+<p>أولًا: الصديق الحقيقي ليس من يصفّق لك أكثر، بل من يجلس بجانبك حين لا يكون هناك ما يُصفَّق له.</p>
+<p>ثانيًا: لا تجعلوا جراحكم تصنع منكم جلّادين. سيأتي رامي في حياتكم، وستقابلون ليان، وسيطعنكم أحدهم في الظهر بابتسامة. لكن في المقابل هناك كرم الذي يتصل في اللحظة الأخيرة، وهشام الذي يعلّمكم، وسديم التي تسأل بصدق، وأمٌّ تقف عند الباب تنتظر أن تُفتح لها الأبواب.</p>
+<p>ثالثًا: النتيجة ليست حكمًا على روحك. قد تتعثر في امتحان، لكنك لا تتعثر في قيمتك.</p>
+<p>رابعًا: من يسخر من تعثركم لا يعرف قصتكم كلها. اتركوهم يضحكون، وابنوا حياتكم بعيدًا عن عيونهم، فالضحكة التي تنتظر سقوطك لن تحضر حين تنهض.</p>
+<p>خامسًا: حتى حين يرفض أحد أحلامكم، لا تكرهوه. الكره ثقيل جدًا، والحلم أخفّ منه. اجعلوا الحلم هو ما تحملونه.</p>
+<p>وسادسًا: حين يُغلق باب، فلا تنظروا إليه طويلًا حتى لا تفوتكم الأبواب الأخرى. فقد أغلق الله بابًا في وجهي ليفتح لي بابًا آخر، ثم علّمني أن الباب الأول لم يُغلق، بل أُجِّل.</p>
+<p>وإن شعرتم يومًا أن الألم يفوق قدرتكم، فتحدثوا إلى شخص تثقون به: أمٌّ، أو صديق، أو مختص. ليس في هذا ضعف، بل هو أعظم أنواع الشجاعة.</p>
+<p>أما أنا، فما زلتُ أحتفظ بالملف المكتوب عليه «مؤجَّل». أفتحه بين حين وآخر، وأنظر إلى الخريطة الصغيرة، وأبتسم. لأنني أعلم أن الخريطة سترجع إلى مكانها فوق مكتبي يومًا ما، وسأرجع أنا إلى هناك، لا طفلًا يبحث عن أمان، بل رجلًا يحمل الأمان في داخله.</p>
+<p>يقول الإيطاليون مثلًا قديمًا، تعلمتُه وأنا طفل على شرفة السيدة مارتا:</p>
+<p class="it" lang="it" dir="ltr">Chi la dura la vince.</p>
+<p>أي: من يصبر ويثابر هو الذي ينتصر.</p>
+<p>وإن سألتموني الآن عن سؤالي الأول:</p>
+<p>«إذا كنّا أصدقاء... هل ستخونني يومًا؟»</p>
+<p>فسأجيب:</p>
+<p>ربما. فالبشر لا ضمان فيهم.</p>
+<p>لكنني لن أتوقف عن الصداقة بسبب الخونة. فكما أن هناك رامي، هناك كرم. وكما أن هناك ليان، هناك سديم. وكما أن هناك جرحًا، هناك دائمًا يدٌ تُضمّده... إن سمحتَ لها.</p>
+<p>وكما أن هناك بابًا أُغلق، هناك سماءٌ واسعة لا يستطيع أحد أن يُغلقها.</p>
+<p>وهكذا أنهي روايتي المتواضعة، وكل ما أتمناه أنكم وجدتم فيها قطعة من أنفسكم.</p>
+<p>المحارب الحقيقي لا يسقط حين يُهزَم، ولا يتحول إلى ما حاربه، ولا يترك الحلم حين يُؤجَّل.</p>
+<p>بل ينهض، ويمسح الغبار عن ملفه القديم، ويكتب على غلافه من جديد:</p>
+<p>«قريبًا».</p>
+<p>(النهاية... أو ربما البداية)</p></div><div class="sig"><span class="it-sig" lang="it" dir="ltr">Autore anonimo: Venor</span><span class="ar-sig" lang="ar" dir="rtl">المؤلف المجهول: فينور</span></div><div class="nav"><button data-go="prev">→ السابق</button><button data-go="idx">الفهرس</button><button data-go="next">التالي ←</button></div></div></section>
+<script>
+(function(){var P=[].slice.call(document.querySelectorAll('.page')),n=P.length,cur=0;
+function show(i){i=Math.max(0,Math.min(n-1,i));cur=i;P.forEach(function(p,k){p.classList.toggle('on',k===i)});
+var t=P[i].getAttribute('data-theme');if(t)document.body.setAttribute('data-theme',t);else document.body.removeAttribute('data-theme');
+P[i].querySelector('[data-go=prev]').hidden=i===0;P[i].querySelector('[data-go=next]').hidden=i===n-1;
+window.scrollTo(0,0);if(location.hash!=='#p-'+i)history.replaceState(null,'','#p-'+i);
+try{document.title=document.querySelector('#p-'+i+' h2,#p-'+i+' h1').textContent.replace(/\s+/g,' ')+' — فينور'}catch(e){}}
+function fromHash(){var m=/^#p-(\d+)$/.exec(location.hash);show(m?+m[1]:0)}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-go],[data-goto]');if(!b)return;
+var g=b.getAttribute('data-go'),to=b.getAttribute('data-goto');if(to!==null){e.preventDefault();show(+to)}
+else if(g==='prev')show(cur-1);else if(g==='next')show(cur+1);else show(1)});
+document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')show(cur+1);if(e.key==='ArrowRight')show(cur-1)});
+window.addEventListener('hashchange',fromHash);fromHash()})();
+</script>
+</body>
+</html>
